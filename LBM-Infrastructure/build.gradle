@@ -1,0 +1,9 @@
+bootJar { enabled = false }
+jar { enabled = true }
+
+dependencies {
+    api project(':LBM-Common')
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.0'
+
+}

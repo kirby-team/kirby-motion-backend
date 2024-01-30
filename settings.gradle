@@ -1,0 +1,6 @@
+rootProject.name = 'LBM-Server'
+
+include 'LBM-Api'
+include 'LBM-Common'
+include 'LBM-Domain'
+include 'LBM-Infrastructure'

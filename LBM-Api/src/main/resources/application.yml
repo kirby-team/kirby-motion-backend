@@ -1,0 +1,40 @@
+# commons
+spring:
+  profiles:
+    include:
+      - infrastructure
+      - domain
+      - common
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+
+springdoc:
+  default-produces-media-type: application/json
+  default-consumes-media-type: application/json
+  swagger-ui:
+    tags-sorter: alpha
+
+server:
+  servlet:
+    context-path:
+  forward-headers-strategy: framework
+
+swagger:
+  user: test
+  password: 1234
+
+#swagger:
+#  user: ${SWAGGER_USER:user}
+#  password: ${SWAGGER_PASSWORD:password}
+
+acl:
+  whiteList: ${ACL_WHITELIST:127.0.0.1,127.0.0.2}
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+logging:
+  level:
+    root: info
