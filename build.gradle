@@ -12,6 +12,12 @@ repositories {
     mavenCentral()
 }
 
+def Qdomains = []
+
+for (qPattern in '**/QA'..'**/QZ') { // qPattern = '**/QA', '**/QB', ... '*.QZ'
+    Qdomains.add(qPattern + '*')
+}
+
 sonarqube {
     properties {
         property "sonar.projectKey", "kirby-team_kirby-motion-backend"
@@ -58,12 +64,6 @@ subprojects {
             xml.required.set(true)
             xml.destination file("reports/jacoco.xml")
         }
-        def Qdomains = []
-
-        for (qPattern in '**/QA'..'**/QZ') { // qPattern = '**/QA', '**/QB', ... '*.QZ'
-            Qdomains.add(qPattern + '*')
-        }
-
         afterEvaluate {
             classDirectories.setFrom(
                     files(classDirectories.files.collect {
@@ -105,6 +105,7 @@ subprojects {
 spotless {
     java {
         target("**/*.java")
+        targetExclude(Qdomains)
         indentWithTabs(1)
         indentWithSpaces(2)
         importOrder()
