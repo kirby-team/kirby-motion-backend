@@ -37,7 +37,7 @@ out/
 .vscode/
 
 ### QClass ###
-src/main/generated/*
+**/generated/*
 
 ### Log ###
 **/*.log
