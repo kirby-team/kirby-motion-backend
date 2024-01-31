@@ -1,13 +1,6 @@
 package kirby.common;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LbmCommonApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+class LbmCommonApplicationTests {}

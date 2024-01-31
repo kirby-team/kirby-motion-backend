@@ -1,8 +1,7 @@
 package kirby.domain.common.aop.domainEvent;
 
-import lombok.Getter;
-
 import java.time.LocalDateTime;
+import lombok.Getter;
 
 @Getter
 public class DomainEvent {

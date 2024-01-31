@@ -1,12 +1,11 @@
 package kirby.common.helper;
 
+import java.util.Arrays;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
-
-import java.util.Arrays;
-import java.util.List;
 
 @Component
 @RequiredArgsConstructor

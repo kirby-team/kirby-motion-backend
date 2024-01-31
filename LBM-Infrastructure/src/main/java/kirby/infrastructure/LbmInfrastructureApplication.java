@@ -9,5 +9,4 @@ public class LbmInfrastructureApplication {
   public static void main(String[] args) {
     SpringApplication.run(LbmInfrastructureApplication.class, args);
   }
-
 }
