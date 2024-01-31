@@ -1,6 +1,6 @@
 package kirby.api.config.security;
 
-import static kirby.common.consts.MzpStatic.SwaggerPatterns;
+import static kirby.common.consts.LbmStatic.SwaggerPatterns;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

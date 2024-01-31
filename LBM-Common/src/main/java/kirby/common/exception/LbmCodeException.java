@@ -6,9 +6,9 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class MzpCodeException extends RuntimeException {
+public class LbmCodeException extends RuntimeException {
 
-  private BaseErrorCode errorCode;
+  private final BaseErrorCode errorCode;
 
   public ErrorReason getErrorReason() {
     return this.errorCode.getErrorReason();

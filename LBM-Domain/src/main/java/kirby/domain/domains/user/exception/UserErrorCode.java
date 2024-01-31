@@ -1,6 +1,6 @@
 package kirby.domain.domains.user.exception;
 
-import static kirby.common.consts.MzpStatic.NOT_FOUND;
+import static kirby.common.consts.LbmStatic.NOT_FOUND;
 
 import java.lang.reflect.Field;
 import java.util.Objects;

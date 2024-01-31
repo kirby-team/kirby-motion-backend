@@ -1,6 +1,6 @@
 package kirby.common.exception;
 
-import static kirby.common.consts.MzpStatic.INTERNAL_SERVER;
+import static kirby.common.consts.LbmStatic.INTERNAL_SERVER;
 
 import java.lang.reflect.Field;
 import java.util.Objects;
