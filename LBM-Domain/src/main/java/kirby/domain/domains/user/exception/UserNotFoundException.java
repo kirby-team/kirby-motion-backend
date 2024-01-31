@@ -1,10 +1,10 @@
 package kirby.domain.domains.user.exception;
 
-import kirby.common.exception.MzpCodeException;
+import kirby.common.exception.LbmCodeException;
 
-public class UserNotFoundException extends MzpCodeException {
+public class UserNotFoundException extends LbmCodeException {
 
-  public static final MzpCodeException EXCEPTION = new UserNotFoundException();
+  public static final LbmCodeException EXCEPTION = new UserNotFoundException();
 
   private UserNotFoundException() {
     super(UserErrorCode.USER_NOT_FOUND);

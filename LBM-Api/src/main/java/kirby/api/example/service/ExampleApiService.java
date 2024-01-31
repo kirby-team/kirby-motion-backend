@@ -12,8 +12,8 @@ public class ExampleApiService {
 
   private final ExampleDomainService exampleDomainService;
 
-  public ExampleResponse getExample() {
-    Example query = exampleDomainService.query(1L);
+  public ExampleResponse getExample(Long id) {
+    Example query = exampleDomainService.query(id);
 
     return ExampleResponse.from(query);
   }

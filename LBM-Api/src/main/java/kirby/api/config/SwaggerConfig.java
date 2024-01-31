@@ -13,14 +13,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @OpenAPIDefinition(
-    info = @Info(title = "Mzp App", description = "Mzp API를 명세하는 문서", version = "0.0.1v"))
+    info = @Info(title = "LogByMe App", description = "LogByMe API를 명세하는 문서", version = "0.0.1v"))
 @RequiredArgsConstructor
 @Configuration
 public class SwaggerConfig implements WebMvcConfigurer {
 
   @Bean
   public GroupedOpenApi appApi() {
-    return GroupedOpenApi.builder().group("mzp-app").pathsToMatch("/app/**").build();
+    return GroupedOpenApi.builder().group("Lbm-app").pathsToMatch("/app/**").build();
   }
 
   @Bean

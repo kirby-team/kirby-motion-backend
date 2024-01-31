@@ -1,6 +1,6 @@
 package kirby.common.consts;
 
-public class MzpStatic {
+public class LbmStatic {
 
   public static final int BAD_REQUEST = 400;
   public static final int UNAUTHORIZED = 401;

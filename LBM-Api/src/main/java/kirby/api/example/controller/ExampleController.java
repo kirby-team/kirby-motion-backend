@@ -10,6 +10,7 @@ import kirby.common.annotation.DevelopOnlyApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -24,7 +25,7 @@ public class ExampleController {
   @GetMapping("/examples")
   @DevelopOnlyApi
   @ApiErrorExceptionsExample(ExampleExceptionDocs.class)
-  public ExampleResponse get() {
-    return exampleApiService.getExample();
+  public ExampleResponse getExample(@RequestParam(name = "id") Long id) {
+    return exampleApiService.getExample(id);
   }
 }
