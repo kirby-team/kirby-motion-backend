@@ -7,6 +7,13 @@ spring:
       - common
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: f87c58e163172e692f04
+            clientSecret: 626843a6a7745c1b2474013798141799f3247ba6
 
 springdoc:
   default-produces-media-type: application/json
@@ -31,10 +38,10 @@ acl:
   whiteList: ${ACL_WHITELIST:127.0.0.1,127.0.0.2}
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: local
+#spring:
+#  config:
+#    activate:
+#      on-profile: local
 logging:
   level:
     root: info
